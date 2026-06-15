@@ -237,13 +237,10 @@ a {
   gap: 24px;
 }
 
-.card {
+.card div {
   display: flex;
   flex-direction: column;
   gap: 12px;
-}
-
-.card-image {
   width: 100%;
   aspect-ratio: 1 / 1;
   min-height: auto;
@@ -252,7 +249,11 @@ a {
   border-radius: 4px;
 }
 
-.card-caption {
+.card-image {
+
+}
+
+.card figcaption {
   font-size: 14px;
   font-weight: 400;
   color: var(--color-dark);
@@ -527,52 +528,4 @@ blockquote cite {
   color: #6b7280;
 }
 
-/* ============================
-   RESPONSIVE
-   ============================ */
-@media (max-width: 768px) {
-  .header-inner {
-    flex-direction: column;
-    gap: 16px;
-    text-align: center;
-  }
 
-  .hero-inner {
-    flex-direction: column;
-  }
-
-  .hero-text h1 {
-    font-size: 32px;
-  }
-
-  .cards-grid,
-  .top-games-grid,
-  .team-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .review-card {
-    flex-direction: column;
-  }
-
-  .review-thumb {
-    width: 100%;
-  }
-
-  .cta-inner {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  blockquote p {
-    font-size: 24px;
-  }
-}
-
-@media (max-width: 480px) {
-  .cards-grid,
-  .top-games-grid,
-  .team-grid {
-    grid-template-columns: 1fr;
-  }
-}
