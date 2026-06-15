@@ -250,7 +250,6 @@ a {
 }
 
 .card-image {
-
 }
 
 .card figcaption {
@@ -528,9 +527,6 @@ blockquote cite {
   color: #6b7280;
 }
 
-<<<<<<< HEAD
-
-=======
 /* ============================
    RESPONSIVE
    ============================ */
@@ -565,4 +561,3 @@ blockquote cite {
 blockquote p {
   font-size: 24px;
 }
->>>>>>> b65743f9ba8e98bd9a41083b7bb6b8c789b96d7b
