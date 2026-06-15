@@ -528,4 +528,41 @@ blockquote cite {
   color: #6b7280;
 }
 
+<<<<<<< HEAD
 
+=======
+/* ============================
+   RESPONSIVE
+   ============================ */
+
+.hero-inner {
+  flex-direction: column;
+}
+
+.hero-text h1 {
+  font-size: 32px;
+}
+
+.cards-grid,
+.top-games-grid,
+.team-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.review-card {
+  flex-direction: column;
+}
+
+.review-thumb {
+  width: 100%;
+}
+
+.cta-inner {
+  flex-direction: column;
+  text-align: center;
+}
+
+blockquote p {
+  font-size: 24px;
+}
+>>>>>>> b65743f9ba8e98bd9a41083b7bb6b8c789b96d7b
