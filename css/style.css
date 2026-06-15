@@ -7,24 +7,28 @@
   font-weight: 300;
   font-style: normal;
 }
+
 @font-face {
   font-family: "Roboto";
   src: url("../fonts/Roboto-LightItalic.ttf") format("truetype");
   font-weight: 300;
   font-style: italic;
 }
+
 @font-face {
   font-family: "Roboto";
   src: url("../fonts/Roboto-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
+
 @font-face {
   font-family: "Roboto";
   src: url("../fonts/Roboto-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
+
 @font-face {
   font-family: "Roboto";
   src: url("../fonts/Roboto-ExtraBold.ttf") format("truetype");
@@ -494,17 +498,25 @@ blockquote cite {
   line-height: 1.7;
 }
 
+/*
 .team-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 28px;
   margin-top: 48px;
+}*/
+
+.team-flex {
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+  margin-top: 20px;
 }
 
 .team-card {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  /*gap: 5px;*/
   text-align: center;
 }
 
@@ -512,25 +524,31 @@ blockquote cite {
   width: 100%;
   aspect-ratio: 1/1;
   border-radius: 50%;
-  border: 2px solid var(--color-dark);
+
   background-color: transparent;
 }
 
-.team-card h3 {
-  font-size: 16px;
-  font-weight: 700;
-  color: var(--color-dark);
+.team-avatar img {
+  border-radius: 50%;
+  border: 2px solid var(--color-dark);
+  width: 75%;
 }
 
-.team-card p {
-  font-size: 14px;
-  color: #6b7280;
-}
+  .team-card h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--color-dark);
+  }
 
-/* ============================
+  .team-card p {
+    font-size: 14px;
+    color: #6b7280;
+  }
+
+  /* ============================
    RESPONSIVE
    ============================ */
-@media (max-width: 768px) {
+  /*@media (max-width: 768px) {
   .header-inner {
     flex-direction: column;
     gap: 16px;
@@ -575,4 +593,4 @@ blockquote cite {
   .team-grid {
     grid-template-columns: 1fr;
   }
-}
+}*/
