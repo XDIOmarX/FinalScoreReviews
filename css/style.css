@@ -118,7 +118,8 @@ a {
   color: var(--color-hero-text);
   letter-spacing: -0.5px;
 }
-.logo-image{
+
+.logo-image {
   width: 2rem;
   border: 2px solid var(--color-blue);
   border-radius: 20px;
@@ -176,10 +177,10 @@ a {
 
 .hero-image {
   flex: 1;
- 
 }
+
 .hero-image img {
-   border-radius: 5px;
+  border-radius: 5px;
 }
 
 /* ============================
@@ -256,14 +257,14 @@ a {
 }
 
 .card-media img {
- width: 100%;
- height: 100%;
- object-fit: cover;
- border-radius: 2px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2px;
 
 }
 
-.card p{
+.card p {
   font-size: 14px;
   font-weight: 400;
   color: var(--color-dark);
@@ -514,6 +515,10 @@ blockquote cite {
   margin-top: 48px;
 }*/
 
+.teamIdH2 {
+  margin-top: 56px;
+}
+
 .team-flex {
   display: flex;
   flex-direction: row;
@@ -524,33 +529,34 @@ blockquote cite {
 .team-card {
   display: flex;
   flex-direction: column;
-  /*gap: 5px;*/
+  justify-content: space-evenly;
+  gap: 5px;
   text-align: center;
 }
 
 .team-avatar {
+  display: flex;
+  flex-direction: row;
   width: 100%;
-  aspect-ratio: 1/1;
-  border-radius: 50%;
-
+  aspect-ratio: 3/3;
+  border-radius: 25%;
+  border: 2px solid var(--color-dark);
   background-color: transparent;
 }
 
 .team-avatar img {
-  border-radius: 50%;
-  border: 2px solid var(--color-dark);
-  width: 75%;
+  border-radius: 25%;
 }
 
-  .team-card h3 {
-    font-size: 16px;
-    font-weight: 700;
-    color: var(--color-dark);
-  }
+.team-card h3 {
+  justify-content: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-dark);
+}
 
 .team-card p {
+  justify-content: inherit;
   font-size: 14px;
   color: #6b7280;
 }
-
-
