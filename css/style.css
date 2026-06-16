@@ -1,41 +1,18 @@
-/* ============================
-   FONT IMPORT (Roboto)
-   ============================ */
 @font-face {
   font-family: "Roboto";
-  src: url("../fonts/Roboto-Light.ttf") format("truetype");
-  font-weight: 300;
+  src: url("../assets/fonts/Roboto-VariableFont_wdth,wght.ttf") format("truetype");
+  font-weight: 100 900;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Roboto";
-  src: url("../fonts/Roboto-LightItalic.ttf") format("truetype");
-  font-weight: 300;
+  src: url("../assets/fonts/Roboto-Italic-VariableFont_wdth,wght.ttf") format("truetype");
+  font-weight: 100 900;
   font-style: italic;
 }
-@font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto-ExtraBold.ttf") format("truetype");
-  font-weight: 800;
-  font-style: normal;
-}
 
-/* ============================
-   CSS CUSTOM PROPERTIES
-   ============================ */
+
 :root {
   --color-dark: #1f2937;
   --color-hero-text: #f9faf8;
@@ -218,7 +195,7 @@ a {
    INFO SECTION
    ============================ */
 .info-section {
-  padding: 64px auto;
+  padding: 64px 0;
 }
 
 .info-section h2 {
@@ -495,13 +472,7 @@ blockquote cite {
   line-height: 1.7;
 }
 
-/*
-.team-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 28px;
-  margin-top: 48px;
-}*/
+
 
 .teamIdH2 {
   margin-top: 56px;
