@@ -119,7 +119,7 @@ a {
   letter-spacing: -0.5px;
 }
 
-.logo-image {
+.logo-image{
   width: 2rem;
   border: 2px solid var(--color-blue);
   border-radius: 20px;
@@ -177,6 +177,7 @@ a {
 
 .hero-image {
   flex: 1;
+
 }
 
 .hero-image img {
