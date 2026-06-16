@@ -4,19 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FinalScoreReviews</title>
-    <link rel="icon" href="./assets/images/logo.png" type="image/png" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
   </head>
   <body>
     <header class="site-header">
       <div class="header-inner container">
-        <a href="index.html" class="logo">FinalScoreReviews</a>
+        <a
+         href="./index.html"
+          class="logo"
+           aria-label="FinalScoreReviews home"
+           >
+          <img 
+            src="./assets/images/logo.png"
+             alt="FinalScoreReviews logo"
+             class="logo-image"
+             >
+          <strong>FinalScoreReviews</strong>
+        </a>
         <nav class="main-nav">
           <ul>
-            <li><a href="pages/reviews.html">Reviews</a></li>
-            <li><a href="pages/top-games.html">Top Games</a></li>
-            <li><a href="pages/about.html">About Us</a></li>
+            <li><a href="./pages/reviews.html">Reviews</a></li>
+            <li><a href="./pages/top-games.html">Top Games</a></li>
+            <li><a href="./pages/about.html">About Us</a></li>
           </ul>
         </nav>
       </div>
@@ -31,12 +41,10 @@
               Honest, in-depth reviews of the latest titles across all
               platforms. No hype — just the real score.
             </p>
-            <a href="pages/reviews.html" class="btn">Explore Reviews</a>
+            <a href="./pages/reviews.html" class="btn">Explore Reviews</a>
           </div>
           <div class="hero-image">
-            <figure class="image-placeholder">
-              <figcaption>Featured game screenshot</figcaption>
-            </figure>
+              <img src="./assets/images/Monster_Hunter_cover.jpg" alt="Monster Hunter Cover">
           </div>
         </div>
       </section>
@@ -44,63 +52,57 @@
       <section class="info-section">
         <div class="container">
           <h2>Latest Reviews.</h2>
-          <div class="cards-grid">
+
+          <div class="cards-layout">
             <article class="card">
-              <div
-                class="card-image image-placeholder"
-                aria-label="Elden Ring screenshot"
-              >
-                <img
-                  src="./assets/images/Elden_Ring.jpg"
-                  alt="Elden Ring Open World"
-                />
+              <div class="card-media">
+                <img 
+                  src="./assets/images/Elden_Ring.jpg" 
+                  alt="Elden Ring open world landscape"
+                >
               </div>
+
               <p>
-                <strong>Elden Ring</strong> – FromSoftware's open-world
-                masterpiece redefines the genre.
+                <strong>Elden Ring</strong> – FromSoftware's open-world masterpiece redefines the genre.
               </p>
             </article>
 
             <article class="card">
-              <div
-                class="card-image image-placeholder"
-                aria-label="Baldur's Gate 3 screenshot"
-              >
-                <img
-                  src="./assets/images/Baldurs_Gate.jpg"
-                  alt="Baldur's Gate mani cover"
-                />
+              <div class="card-media">
+                <img 
+                  src="./assets/images/Baldurs_Gate.jpg" 
+                  alt="Baldur's Gate 3 cover art"
+                >
               </div>
+
               <p>
-                <strong>Baldur's Gate 3</strong> – A CRPG benchmark that may
-                never be surpassed.
+                <strong>Baldur's Gate 3</strong> – A CRPG benchmark that may never be surpassed.
               </p>
             </article>
 
             <article class="card">
-              <div
-                class="card-image image-placeholder"
-                aria-label="Alan Wake 2 screenshot"
-              >
-                <img
-                  src="./assets/images/Alan_Wake.jpg"
-                  alt="Alan Wake Cover"
-                />
+              <div class="card-media">
+                <img 
+                  src="./assets/images/Alan_Wake.jpg" 
+                  alt="Alan Wake 2 cover art"
+                >
               </div>
+
               <p>
-                Alan Wake 2 – Remedy's most ambitious and atmospheric thriller
-                yet.
+                <strong>Alan Wake 2</strong> – Remedy's most ambitious and atmospheric thriller yet.
               </p>
             </article>
 
             <article class="card">
-              <div
-                class="card-image image-placeholder"
-                aria-label="Spider-Man 2 screenshot"
-              ></div>
+              <div class="card-media">
+                <img 
+                  src="./assets/images/spider-man2.jpg" 
+                  alt="Spider-Man 2 cover art"
+                >
+              </div>
+
               <p>
-                Spider-Man 2 – Insomniac raises the bar for superhero action
-                games.
+                <strong>Spider-Man 2</strong> – Insomniac raises the bar for superhero action games.
               </p>
             </article>
           </div>
@@ -129,7 +131,11 @@
               inbox.
             </p>
           </div>
-          <a href="./pages/signup.html" class="btn btn-outline">Sign up</a>
+          <a
+           href="./pages/signup.html"
+            class="btn btn-outline"
+            >Sign up
+          </a>
         </div>
       </section>
     </main>
