@@ -75,13 +75,12 @@
 @media screen and (max-width:768px) {
   .top-games-section {
     display: flex;
-    
     padding: 64px 0;
   }
 
   .top-games-flex {
-  display: flex;
-  flex-direction: column-reverse;
-  gap: 28px;
-}
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 28px;
+  }
 }
