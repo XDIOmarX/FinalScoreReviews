@@ -34,7 +34,7 @@
   gap: 5px;
   text-align: center;
 }
-
+ 
 .team-card img {
   aspect-ratio: 3/3;
   border-radius: 25%;
@@ -46,12 +46,17 @@
   font-style: italic;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width:992px) {
+  .about-section p {
+   padding: 1rem;
+ }
+}
+
+@media screen and (max-width: 600px) {
   .team-cards-layout {
-    display: flex;
     flex-direction: column;
-    gap: 18px;
-    margin-top: 20px;
-    align-items: center;
   }
+  .about-section p {
+   padding: 0.5rem;
+ }
 }

@@ -23,9 +23,9 @@
   padding-bottom: 32px;
 }
 
-.review-card:last-child {
+/* .review-card:last-child {
   border-bottom: none;
-}
+} */
 
 /*Check if the property min-height, has to be here.*/
 .review-thumb {
@@ -68,14 +68,21 @@
   padding: 4px 14px;
   border-radius: 20px;
 }
+@media screen and (max-width:992px) {
+    .reviews-section {
+    padding: 10px 0;
+}
+}
 
-@media screen and (max-width:768px){
+@media screen and (max-width:600px){
+  
   .review-card {
-    display: flex;
     flex-direction: column-reverse;
     align-items: center;
-    gap: 28px;
     border-bottom: 1px solid var(--color-secondary);
-    padding-bottom: 32px;
   }
+  .review-info p {
+    margin-left: 1rem;
+}
+
 }

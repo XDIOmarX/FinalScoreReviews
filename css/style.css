@@ -73,10 +73,11 @@ a {
 .site-header {
   background-color: var(--color-dark);
   position: fixed;
-  width: 100%;
   top: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 100;
 }
 
 .header-inner {
@@ -251,60 +252,50 @@ blockquote cite {
   color: var(--color-secondary);
 }
 
-/*If possible, we should try to make the nav link, go underneath the site logo, as the screen size shrinks responsibly*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .container {
     padding: 8px 16px;
   }
 
   .site-header {
-    display: flex;
-    flex-wrap: row;
     width: 100dvi;
     max-width: unset;
   }
 
-  .main-nav ul {
-    display: flex;
-    flex-direction: column;
-    gap: 0px;
-  }
+.header-inner{
+  flex-direction: column;
+  gap: 1rem;
 }
-
 
 /*===========================
     Header
 =============================*/
-.site-header {
 
-  width: 100dvi;
-  max-width: unset;
-}
 
 .logo {
-  margin-top: 0.4rem;
   gap: 5px;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 .logo-image {
-  width: 1.2rem;
+  width: 1.5rem;
 }
 
 .main-nav a {
-  font-size: 10px;
+  font-size: 14px;
 }
 
 /* ============================
    BUTTONS
    ============================ */
 .btn {
-  font-size: 10px;
+  font-size: 12px;
   padding: 4px 8px;
 }
 
 .btn-outline {
-  width: 5rem;
+  width: 6rem;
+  text-align: center;
 }
 
 /* ============================
@@ -328,7 +319,6 @@ blockquote cite {
    QUOTE SECTION
    ============================ */
 .quote-section {
-
   padding: 32px 0;
 }
 
@@ -369,4 +359,5 @@ blockquote cite {
 .page-hero p {
   font-size: 14px;
 
+}
 }
