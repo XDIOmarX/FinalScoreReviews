@@ -86,33 +86,22 @@
   margin-top: 10px;
 }
 
-/* ============================
-   QUOTE SECTION
-   ============================ */
-.quote-section {
-  background-color: var(--color-quote-bg);
-  padding: 72px 0;
+
+@media screen and (max-width:768px) {
+  .hero-inner {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 48px;
 }
 
-.quote-inner {
-  max-width: 680px;
+  .hero-text h1 {
+  font-size: 24px;
+
 }
 
-blockquote p {
-  font-size: 36px;
-  font-weight: 300;
-  font-style: italic;
-  color: var(--color-dark);
-  line-height: 1.4;
-  margin-bottom: 20px;
-}
+.hero-text .hero-sub {
+  font-size: 12px;
 
-blockquote cite {
-  display: block;
-  font-size: 16px;
-  font-weight: 400;
-  font-style: normal;
-  color: var(--color-dark);
-  text-align: right;
 }
-
+}
