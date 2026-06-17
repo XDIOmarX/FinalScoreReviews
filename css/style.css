@@ -1,15 +1,13 @@
 @font-face {
   font-family: "Roboto";
-  src: url("../assets/fonts/Roboto-VariableFont_wdth,wght.ttf")
-    format("truetype");
+  src: url("../assets/fonts/Roboto-VariableFont_wdth,wght.ttf") format("truetype");
   font-weight: 100 900;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Roboto";
-  src: url("../assets/fonts/Roboto-Italic-VariableFont_wdth,wght.ttf")
-    format("truetype");
+  src: url("../assets/fonts/Roboto-Italic-VariableFont_wdth,wght.ttf") format("truetype");
   font-weight: 100 900;
   font-style: italic;
 }
@@ -147,10 +145,12 @@ a {
   border: 2px solid var(--color-hero-text);
 }
 
-.btn-outline:hover, .btn:hover {
+.btn-outline:hover,
+.btn:hover {
   background-color: var(--color-hero-text);
   color: var(--color-dark);
 }
+
 /* ============================
    QUOTE SECTION
    ============================ */
@@ -228,9 +228,9 @@ blockquote cite {
 /* ============================
    PAGE HERO (inner pages)
    ============================ */
-   .hero {
-    margin-top: 48px;
-   }
+.hero {
+  margin-top: 48px;
+}
 
 .page-hero {
   background-color: var(--color-dark);
@@ -251,11 +251,23 @@ blockquote cite {
   color: var(--color-secondary);
 }
 
-
+/*If possible, we should try to make the nav link, go underneath the site logo, as the screen size shrinks responsibly*/
 @media screen and (max-width: 768px) {
   .container {
-  padding: 8px 16px;
+    padding: 8px 16px;
   }
+/*
+  .site-header {
+    display: flex;
+    flex-direction: row;
+    width: 100dvi;
+    max-width: unset;
+  }
+
+  .main-nav{
+    display: flex;
+    justify-content: space-between;
+  }*/
 }
 
 
@@ -265,8 +277,9 @@ blockquote cite {
 .site-header {
 
   width: 100dvi;
-max-width: unset;
+  max-width: unset;
 }
+
 .logo {
   margin-top: 0.4rem;
   gap: 5px;
@@ -276,6 +289,7 @@ max-width: unset;
 .logo-image {
   width: 1.2rem;
 }
+
 .main-nav a {
   font-size: 10px;
 }
@@ -287,9 +301,11 @@ max-width: unset;
   font-size: 10px;
   padding: 4px 8px;
 }
+
 .btn-outline {
   width: 5rem;
 }
+
 /* ============================
    CTA SECTION
    ============================ */
@@ -297,18 +313,21 @@ max-width: unset;
   margin-left: 10px;
   margin-right: 10px;
 }
+
 .cta-text h3 {
   font-size: 15px;
   margin-bottom: 3px;
 }
+
 .cta-text p {
   font-size: 12px;
 }
+
 /* ============================
    QUOTE SECTION
    ============================ */
 .quote-section {
-  
+
   padding: 32px 0;
 }
 
@@ -321,6 +340,7 @@ blockquote p {
 blockquote cite {
   font-size: 14px;
 }
+
 /* ============================
    FOOTER
    ============================ */
@@ -337,8 +357,9 @@ blockquote cite {
 }
 
 .page-hero {
-    margin-top: 36px;
+  margin-top: 36px;
 }
+
 .page-hero h1 {
   font-size: 36px;
   margin-bottom: 12px;
