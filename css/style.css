@@ -256,18 +256,19 @@ blockquote cite {
   .container {
     padding: 8px 16px;
   }
-/*
+
   .site-header {
     display: flex;
-    flex-direction: row;
+    flex-wrap: row;
     width: 100dvi;
     max-width: unset;
   }
 
-  .main-nav{
+  .main-nav ul {
     display: flex;
-    justify-content: space-between;
-  }*/
+    flex-direction: column;
+    gap: 0px;
+  }
 }
 
 
