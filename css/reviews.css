@@ -27,6 +27,7 @@
   border-bottom: none;
 }
 
+/*Check if the property min-height, has to be here.*/
 .review-thumb {
   width: 280px;
   min-height: 120px;
