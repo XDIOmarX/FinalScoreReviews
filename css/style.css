@@ -119,6 +119,7 @@ a {
 }
 
 .main-nav a:hover {
+  background-color: var(--color-blue);
   color: var(--color-hero-text);
 }
 
