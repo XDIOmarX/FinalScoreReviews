@@ -21,6 +21,7 @@
   gap: 28px;
   border-bottom: 1px solid var(--color-secondary);
   padding-bottom: 32px;
+  scroll-margin-top: var(--anchor-offset);
 }
 
 /* .review-card:last-child {

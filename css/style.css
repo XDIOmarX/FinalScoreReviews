@@ -20,6 +20,7 @@
   --color-quote-bg: #e5e7eb;
   --color-white: #ffffff;
   --font-base: "Roboto", sans-serif;
+   --anchor-offset: 96px;
 }
 
 /* ============================
@@ -119,6 +120,7 @@ a {
 }
 
 .main-nav a:hover {
+  /* padding: 10px; */
   background-color: var(--color-blue);
   color: var(--color-hero-text);
 }
