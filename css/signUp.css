@@ -21,7 +21,7 @@
 }
 
 .signup-header p {
-  color: #6b7280;
+  color: var(--meta-text);
 }
 
 .signup-form {
