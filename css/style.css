@@ -19,6 +19,7 @@
   --color-blue: #3882f6;
   --color-quote-bg: #e5e7eb;
   --color-white: #ffffff;
+  --meta-text : #6b7280;
   --font-base: "Roboto", sans-serif;
    --anchor-offset: 96px;
 }
@@ -26,9 +27,7 @@
 /* ============================
    RESET & BASE
    ============================ */
-*,
-*::before,
-*::after {
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -119,11 +118,11 @@ a {
   transition: color 0.2s;
 }
 
-.main-nav a:hover {
-  /* padding: 10px; */
+.main-nav a:hover, .logo:hover {
   background-color: var(--color-blue);
   color: var(--color-hero-text);
 }
+
 
 /* ============================
    BUTTONS
@@ -167,7 +166,8 @@ a {
   max-width: 680px;
 }
 
-blockquote p {
+
+.quote-inner p {
   font-size: 36px;
   font-weight: 300;
   font-style: italic;
@@ -176,7 +176,7 @@ blockquote p {
   margin-bottom: 20px;
 }
 
-blockquote cite {
+.quote-inner cite {
   display: block;
   font-size: 16px;
   font-weight: 400;
@@ -262,7 +262,6 @@ blockquote cite {
 
   .site-header {
     width: 100dvi;
-    max-width: unset;
   }
 
 .header-inner{
@@ -325,13 +324,12 @@ blockquote cite {
   padding: 32px 0;
 }
 
-
-blockquote p {
+.quote-inner p {
   font-size: 24px;
   margin-bottom: 15px;
 }
 
-blockquote cite {
+.quote-inner cite {
   font-size: 14px;
 }
 
