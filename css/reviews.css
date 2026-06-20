@@ -79,13 +79,13 @@
 @media screen and (max-width:600px) {
 
   .review-info {
-    align-items: center;
+    /*align-items: center;*/
     text-align: center;
   }
 
   .review-card {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     text-align: justify;
     text-justify: inter-word;
