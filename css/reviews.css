@@ -81,6 +81,7 @@
   .review-info {
     /*align-items: center;*/
     text-align: center;
+    gap: 532px;
   }
 
   .review-card {
@@ -90,6 +91,7 @@
     text-align: justify;
     text-justify: inter-word;
     border-bottom: 1px solid var(--color-secondary);
+    padding-bottom: 75%;
   }
 
   .review-thumb {
