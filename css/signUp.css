@@ -71,4 +71,45 @@
 .form-footer a {
   color: var(--color-blue);
   font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .signup-section {
+    padding: 32px 0;
+  }
+
+  .signup-card {
+    max-width: 80%;
+  }
+
+  .signup-header {
+    margin-bottom: 24px;
+  }
+
+  .signup-header h2 {
+    font-size: 28px;
+  }
+
+  .signup-header p {
+    font-size: 14px;
+  }
+
+  .signup-form {
+    gap: 14px;
+  }
+
+  .form-group input {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .signup-form .btn {
+    width: 50%;
+    aspect-ratio: 2/0.5;
+  }
 }

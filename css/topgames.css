@@ -72,14 +72,22 @@
 
 }
 @media screen and (max-width:992px) {
-    .top-games-section {
+    .top-games-section container {
     padding: 10px 0;
+    width: 120px;
   }
+     
 }
 
-@media screen and (max-width:600px) {
-
+@media screen and (max-width: 600px) {
   .top-games-flex {
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
   }
+
+ .top-game-card figure {
+  width: 120px;
+  margin: 0 auto;
+}
 }
