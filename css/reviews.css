@@ -18,10 +18,16 @@
 
 .review-card {
   display: flex;
+  flex-direction: row;
   gap: 28px;
   border-bottom: 1px solid var(--color-secondary);
   padding-bottom: 32px;
   scroll-margin-top: var(--anchor-offset);
+}
+
+.review-card img {
+  display: flex;
+  flex-direction: column;
 }
 
 .review-thumb {
@@ -63,22 +69,35 @@
   padding: 4px 14px;
   border-radius: 20px;
 }
+
 @media screen and (max-width:992px) {
-    .reviews-section {
+  .reviews-section {
     padding: 10px 0;
-}
+  }
 }
 
-@media screen and (max-width:600px){
-  
-  .review-card {
-    flex-direction: column-reverse;
+@media screen and (max-width:600px) {
+
+  .review-info {
     align-items: center;
+    text-align: center;
+  }
+
+  .review-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    text-justify: inter-word;
     border-bottom: 1px solid var(--color-secondary);
+  }
+
+  .review-thumb {
+    width: auto;
   }
 
   .review-description {
     margin-left: 1rem;
-}
+  }
 
 }
