@@ -3,7 +3,7 @@
 }
 
 .top-games-section h2 {
-  font-size: 36px;
+ font-size: clamp(2rem, 1.7rem + 1.1vw, 2.4rem);
   font-weight: 800;
   color: var(--color-dark);
   margin-bottom: 36px;
@@ -24,7 +24,7 @@
   border-radius: 2px;
 }
 
-.top-game-card figure {
+.top-game-card picture {
   aspect-ratio: 3 / 4;
   border-radius: 6px;
   background-color: var(--color-secondary);
@@ -39,13 +39,13 @@
 }
 
 .top-game-card h3 {
-  font-size: 16px;
+  font-size: 1.1rem;
   font-weight: 700;
   color: var(--color-dark);
 }
 
 .top-game-card .card-caption {
-  font-size: 14px;
+  font-size: 1rem;
   color: var(--meta-text);
   text-align: center;
 }
@@ -60,11 +60,10 @@
 
 .score-badge {
   align-self: center;
-  display: flex;
-  flex-direction: column;
+  display: inline-flex;
   background-color: var(--color-blue);
   color: var(--color-hero-text);
-  font-size: 14px;
+  font-size: 0.9rem;
   font-weight: 800;
   padding: 4px 14px;
   border-radius: 20px;
@@ -72,9 +71,21 @@
 
 }
 @media screen and (max-width:992px) {
-    .top-games-section container {
+  .top-games-section {
     padding: 10px 0;
-    width: 120px;
+  }
+
+  .top-game-card h3 {
+    font-size: 1rem;
+  }
+
+  .top-game-card .card-caption {
+    font-size: 0.9rem;
+  }
+
+  .top-game-card .score-badge {
+    font-size: 0.85rem;
+    white-space: nowrap;
   }
      
 }
@@ -86,8 +97,20 @@
     gap: 20px;
   }
 
- .top-game-card figure {
-  width: 120px;
-  margin: 0 auto;
-}
+  .top-game-card h3 {
+    font-size: 0.85rem;
+  }
+
+  .top-game-card .card-caption {
+    font-size: 0.8rem;
+  }
+
+  .top-game-card .score-badge {
+    font-size: 0.8rem;
+  }
+
+  .top-game-card picture {
+    width: 120px;
+    margin: 0 auto;
+  }
 }
