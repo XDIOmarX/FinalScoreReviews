@@ -87,11 +87,11 @@
   .review-card {
     display: flex;
     flex-direction: column-reverse;
-    align-items: center;
+    /*align-items: center;*/
     text-align: justify;
     text-justify: inter-word;
     border-bottom: 1px solid var(--color-secondary);
-    padding-top: 15%;
+    padding-top: 10%;
     padding-bottom: 25%;
   }
 
