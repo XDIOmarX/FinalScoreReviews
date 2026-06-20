@@ -1,62 +1,103 @@
-.about-section {
-  padding: 64px 0;
-}
 
-.about-section h2 {
+.about-section {
+  padding: 48px 0;
+}
+.about-layout{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about-text h2 {
   font-size: 36px;
   font-weight: 800;
   color: var(--color-dark);
   margin-bottom: 20px;
 }
-
-.about-section p {
-  font-size: 18px;
+.about-text {
+  max-width: 40rem;
+  flex: 1;
+}
+.about-text p {
+  font-size: clamp(1rem, 0.95rem + 0.45vw, 1.2rem);
   color: var(--color-dark);
-  max-width: 660px;
   margin-bottom: 20px;
   line-height: 1.7;
+  padding-left: 1rem;
 }
 
-#teamIdH2 {
-  margin-top: 56px;
+.team-title {
+  margin-top: -1rem;
+  margin-bottom: 1rem;
 }
 
 .team-cards-layout {
   display: flex;
-  gap: 18px;
-  margin-top: 20px;
+  flex-direction: column;
+  gap: 0.5rem;
+  /* margin-top: 20px; */
   align-items: center;
 }
 
 .team-card {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 5px;
-  text-align: center;
+  text-align: center; 
 }
  
 .team-card img {
-  aspect-ratio: 3/3;
+  aspect-ratio: 1/1;
   border-radius: 25%;
   border: 2px solid var(--color-dark);
   background-color: transparent;
+  max-width: 110px;
 }
 
 .team-card figcaption {
+  font-size: clamp(0.8rem, 0.7rem + 0.45vw, 1rem);
   font-style: italic;
 }
 
 @media screen and (max-width:992px) {
-  .about-section p {
+  .about-layout{
+    flex-direction: column;
+  }
+  .about-text p {
    padding: 1rem;
  }
+   .team-cards-layout {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+    .about-section{
+    padding: 24px 0;
+  }
+
+  .about-text h2 {
+    text-align: center;
+  }
+  .about-text p {
+   padding: 0.5rem;
+ }
+  .team-card img {
+    max-width: 135px;
+  }
+  .team-title {
+  margin-top: 0rem;
+  text-align: center;
+}
 }
 
 @media screen and (max-width: 600px) {
   .team-cards-layout {
-    flex-direction: column;
+    gap: 1rem;
   }
-  .about-section p {
-   padding: 0.5rem;
- }
+  .team-card img {
+    max-width: 100px;
+  }
+
+
 }
